@@ -27,6 +27,17 @@ O foco do projeto é mostrar como um mesmo problema pode ser resolvido de formas
 
 ### [Chain of Responsibility](https://github.com/Guzzatti/ABP-designPatterns/tree/c2af12f9fb242cce2cd1bd8af98a137ef1163af3/src/comportamentais/chain_of_responsability)
 
+Para o Chain of responsability, foi criada uma cadeia de validadores, onde cada um verifica um componente específico. Se um componente estiver ausente ou inadequado, o validador adiciona um erro à lista. A requisição (objeto ComputerComponents) passa por toda a cadeia até o fim.
+
+Cada validador:
+
+- Implementa uma interface comum (ComponentValidator)
+- Herda de uma classe base (BaseValidator) que permite encadeamento dinâmico
+- Trata apenas a sua responsabilidade (ex: CPUValidator valida só a CPU)
+
+Cadeia usada:
+CPU → RAM → Armazenamento → Fonte → Gabinete
+
 ### Abstract Factory
 
 ### [Builder](https://github.com/Guzzatti/ABP-designPatterns/tree/c2af12f9fb242cce2cd1bd8af98a137ef1163af3/src/criacionais/builder)
