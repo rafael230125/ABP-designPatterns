@@ -13,11 +13,11 @@ Este projeto foi desenvolvido como parte da disciplina de **Design Patterns**, m
 
 Na vida real, ao montar um computador personalizado, o usuário pode escolher diferentes combinações de peças — como CPU, memória RAM, armazenamento, fonte, gabinete, etc. No entanto, nem toda combinação é válida. Por exemplo:
 
-Não adianta escolher uma CPU sem definir uma fonte de energia compatível.
+- Não adianta escolher uma CPU sem definir uma fonte de energia compatível.
 
-Um computador sem memória RAM ou sem armazenamento mínimo não funcionará.
+- Um computador sem memória RAM ou sem armazenamento mínimo não funcionará.
 
-Sem gabinete, não há estrutura física para montar o PC.
+- Sem gabinete, não há estrutura física para montar o PC.
 
 O grande desafio é garantir que o usuário tenha liberdade para personalizar seu computador, mas que a configuração final atenda a requisitos mínimos obrigatórios para o funcionamento do sistema.
 
