@@ -40,6 +40,13 @@ CPU → RAM → Armazenamento → Fonte → Gabinete
 
 ### Abstract Factory
 
+Permite criar **famílias completas de componentes compatíveis** (Intel ou AMD), sem que o cliente conheça os detalhes internos:
+
+- **`ComputerFactory`** define a interface abstrata com métodos como `createProcessor()`, `createMotherboard()` etc.
+- **`IntelFactory`** e **`AmdFactory`** implementam `ComputerFactory`, cada uma produzindo componentes específicos.
+- A função **`createComputer(factory)`** monta um computador a partir da factory fornecida.
+- **Vantagens**: garante compatibilidade entre componentes, mantém cliente desacoplado das implementações concretas, facilita a extensão para novas famílias sem alterações no cliente
+
 ### [Builder](https://github.com/Guzzatti/ABP-designPatterns/tree/c2af12f9fb242cce2cd1bd8af98a137ef1163af3/src/criacionais/builder)
 
 Para o padrão builder foi criada a interface `IComputadorBuilder` e a partir dela dois builders concretos. Ambos retornam um objeto `Computador()`: 
