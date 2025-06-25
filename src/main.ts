@@ -9,6 +9,8 @@ import { IComputadorBuilder } from "./criacionais/builder/IComputadorBuilder";
 import { ComputadorBuilder } from "./criacionais/builder/ComputadorBuilder";
 import { PresetComputadorBuilder } from "./criacionais/builder/PresetComputadorBuilder";
 
+import { IntelFactory, AmdFactory, createComputer } from "./criacionais/builder/abstractfactory/abstractFactory";
+
 /*
 EXEMPLOS DE USO - CHAIN OF RESPONSABILITY
 */
@@ -57,3 +59,14 @@ console.log("PC criado via interface:", pc);
 const builder2: IComputadorBuilder = new PresetComputadorBuilder("GAMER");
 const pcGamer = builder2.build();
 console.log("PC Gamer pré-montado:", pcGamer);
+
+/*
+EXEMPLO DE USO - ABSTRACT FACTORY
+*/
+console.log("\n--- Abstract Factory: Montagem de Computadores ---");
+
+const intelPC_AF = createComputer(new IntelFactory());
+intelPC_AF.displaySpecs();
+
+const amdPC_AF = createComputer(new AmdFactory());
+amdPC_AF.displaySpecs();
