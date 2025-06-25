@@ -9,7 +9,7 @@ import { IComputadorBuilder } from "./criacionais/builder/IComputadorBuilder";
 import { ComputadorBuilder } from "./criacionais/builder/ComputadorBuilder";
 import { PresetComputadorBuilder } from "./criacionais/builder/PresetComputadorBuilder";
 
-import { IntelFactory, AmdFactory, createComputer } from "./criacionais/builder/abstractfactory/abstractFactory";
+import { IntelFactory, AmdFactory, createComputer } from "./criacionais/abstractfactory/abstractFactory";
 
 /*
 EXEMPLOS DE USO - CHAIN OF RESPONSABILITY

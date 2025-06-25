@@ -38,6 +38,8 @@ Cada validador:
 Cadeia usada:
 CPU → RAM → Armazenamento → Fonte → Gabinete
 
+Para rodar - npx ts-node src/comportamentais/chain_of_responsability/main.ts
+
 ### Abstract Factory
 
 Permite criar **famílias completas de componentes compatíveis** (Intel ou AMD), sem que o cliente conheça os detalhes internos:
